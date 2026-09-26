@@ -1,6 +1,5 @@
 # MAX Chat — тестовое задание на позицию Frontend React Developer
 
-SPA-чат для отправки и получения текстовых сообщений в мессенджере **MAX** через [GREEN-API](https://green-api.com/max).
 
 ## 🚀 Стек технологий
 
