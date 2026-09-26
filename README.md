@@ -1,16 +1,33 @@
-# React + Vite
+# MAX Chat — тестовое задание на позицию Frontend React Developer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SPA-чат для отправки и получения текстовых сообщений в мессенджере **MAX** через [GREEN-API](https://green-api.com/max).
 
-Currently, two official plugins are available:
+## 🚀 Стек технологий
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** (Hooks: `useState`, `useEffect`, `useRef`)
+- **Vite** — сборка и dev-сервер
+- **Axios** — HTTP-запросы к GREEN-API
+- **CSS Modules** — изолированная стилизация
 
-## React Compiler
+## 📋 Функционал
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ✅ Авторизация по `idInstance` и `apiTokenInstance`
+- ✅ Создание нового чата по номеру телефона / `chatId`
+- ✅ Отправка текстовых сообщений
+- ✅ Получение входящих сообщений через Long Polling (`receiveNotification` + `deleteNotification`)
+- ✅ Автопрокрутка к новому сообщению (с учётом позиции скролла)
+- ✅ Индикация статуса отправки
 
-## Expanding the ESLint configuration
+## ⚙️ Установка и запуск
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Клонировать репозиторий
+
+```bash
+git clone https://github.com/Kirill-Shikov/max-chat.git
+cd max-chat
+
+. Установить зависимости
+npm install
+
+Запустить dev-сервер
+npm run dev
